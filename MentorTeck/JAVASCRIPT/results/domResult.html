@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Esercizi Manipolazione del DOM</title>
+  </head>
+  <body>
+    <h1>Esercizi Manipolazione del DOM</h1>
+
+    <!-- Esercizio 1 - Cambia il Testo di un Paragrafo -->
+    <p id="paragrafo">Questo è un paragrafo.</p>
+    <button onclick="cambiaTestoParagrafo()">Cambia Testo</button>
+
+    <!-- Esercizio 2 - Aggiungi Elementi alla Lista -->
+    <ul id="lista">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+    </ul>
+    <input type="text" id="nuovoElemento" placeholder="Nuovo elemento" />
+    <button onclick="aggiungiElementoLista()">Aggiungi Elemento</button>
+
+    <!-- Aggiungi qui gli altri esercizi -->
+
+    <script>
+      // Funzioni JavaScript per gli esercizi
+      function cambiaTestoParagrafo() {
+        const paragrafo = document.getElementById("paragrafo");
+        paragrafo.textContent = "Il testo è stato cambiato!";
+      }
+
+      function aggiungiElementoLista() {
+        const lista = document.getElementById("lista");
+        const nuovoElemento = document.getElementById("nuovoElemento").value;
+        const elementoLi = document.createElement("li");
+        elementoLi.textContent = nuovoElemento;
+        lista.appendChild(elementoLi);
+      }
+
+      // Aggiungi qui le funzioni per gli altri esercizi
+    </script>
+  </body>
+</html>

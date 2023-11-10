@@ -1,0 +1,4 @@
+1 - Come gestisci gli errori (exceptions) in JavaScript e quali costrutti vengono utilizzati per farlo?
+
+2 - Spiega cos'è una promessa (Promise) in JavaScript e come gestisci le promesse asincrone.
+
